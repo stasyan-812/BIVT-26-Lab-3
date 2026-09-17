@@ -8,9 +8,15 @@ namespace Lab3
         {
             int count = 0;
 
-            // code here
-
-            // end
+            for (int i = 0; i < n; i++)
+            {
+                double x = double.Parse(Console.ReadLine());
+                double y = double.Parse(Console.ReadLine());
+                if (r1 < x * x + y * y &&  r2 > x * x + y * y)
+                {
+                    count++;
+                }
+            }
 
             return count;
         }
